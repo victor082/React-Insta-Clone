@@ -1,0 +1,33 @@
+.postContainer {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.postTopMain {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px 0;
+}
+
+.post-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post-top .smallPic {
+    padding: 0 10px;
+}
+
+.post-top .smallPic img{
+    border-radius: 50px;
+}
+
+.post-top .username { 
+    font-weight: bold;
+}
+
+.postMain {
+    width: 640px;
+    padding: 5px 0;
+}

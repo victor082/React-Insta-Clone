@@ -18,7 +18,7 @@ class App extends React.Component {
         <header className="App-header">
           <SearchBar />
         </header>
-        <PostContainer />
+        <PostContainer posts={this.state.posts} />
       </div>
     );
   }
