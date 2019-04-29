@@ -11,6 +11,8 @@
 
 .searchBarHeader {
     width: 1000px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
 }
 
 .searchBarLogo {
@@ -33,7 +35,7 @@
     font-size: 2rem;
 }
 
-form {
+.searchBarInput {
     display: flex;
     justify-content: center;
 }

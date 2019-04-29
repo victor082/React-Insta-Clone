@@ -9,7 +9,9 @@ const SearchBar = () => {
         <span className="searchBarLogo">
             <i className="fab fa-instagram" /><span>|</span><h2>Instagram</h2>
             </span>
+            <div className="searchBarInput">
             <SearchBarInput/>
+            </div>
         </span>
         </div>
     )
