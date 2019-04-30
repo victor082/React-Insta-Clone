@@ -1,16 +1,18 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PostTop from './PostTop';
+import CommentContainer from '../CommentSection/CommentContainer';
 import './PostContainer.css';
 
 function Post(props) {
     return (
-        <Fragment>
         <div className="postMain">
             <PostTop username={props.post.username} 
             thumbnailPic={props.post.thumbnailUrl}/>
-            <img src={props.post.imageUrl} />
+            <div> <img src={props.post.imageUrl} />
+            </div>
+            <p className="Likes">{props.post.likes} Likes</p>
+            <CommentContainer comments={props.post.comments}/>
         </div>
-        </Fragment>
     )
 }
 

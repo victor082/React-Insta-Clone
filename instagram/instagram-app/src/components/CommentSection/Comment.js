@@ -2,12 +2,11 @@ import React from 'react';
 import './Comment.css';
 
 const Comment = props => {
-    return (
-        <form>
-            <input type="text"
-            placeholder="Add a comment..." 
-            />
-        </form>
+    return(
+        <div className="commentLines">
+            <p className="commentUser">{props.comment.username}</p>
+            <p className="commentText">{props.comment.text}</p>
+        </div>
     )
 }
 

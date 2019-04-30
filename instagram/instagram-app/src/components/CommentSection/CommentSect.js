@@ -1,13 +1,28 @@
 import React from 'react';
 import './Comment.css';
 
-const CommentSect = props => {
-    return (
-        <div>
-            <p>{props.comments.text}</p>
-            <p>{props.comments.username}</p>
-        </div>
-    )
-}
+class CommentSect extends React.Component { //Push new comment into dummydata
+    constructor(props) {
+        super(props);
+        this.state = {
+            posts: []
+        };
+
+        // handleSubmit = (event) => {
+        //     event.preventDefault();
+        // }
+    }
+    render() {
+        return (
+            <form >
+                <input type="text"
+                placeholder="Add comment... "
+                name="posts"
+                id="new-post"
+                />
+            </form>
+        );
+    }
+};
 
 export default CommentSect;

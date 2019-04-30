@@ -1,0 +1,16 @@
+.comments {
+    padding: 0px 5px;
+}
+
+.commentLines {
+    margin-left: 1rem;
+}
+
+.commentUser {
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.commentText {
+    font-size: .75rem;
+}

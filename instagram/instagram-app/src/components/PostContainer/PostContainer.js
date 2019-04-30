@@ -6,8 +6,8 @@ import Post from './Post';
 function PostContainer(props) {
     return (
         <div className="postContainer">
-            <p>{props.posts.map(post => 
-            <Post key={post.timestamp} post={post} />)}</p>
+            {props.posts.map(post => 
+            <Post key={post.timestamp} post={post} />)}
         </div>
     )
 }
