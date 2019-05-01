@@ -1,21 +1,51 @@
+// import React from 'react';
+// import SearchBarInput from './SearchBarInput';
+// import './SearchBar.css';
+
+// const SearchBar = () => {
+//     return (
+//         <div className="searchBarContainer">
+//         <span className="searchBarHeader">
+//         <span className="searchBarLogo">
+//             <i className="fab fa-instagram" /><span>|</span><h2>Instagram</h2>
+//             </span>
+//             <div className="searchBarInput">
+//             <SearchBarInput/>
+//             </div>
+//         </span>
+//         </div>
+//     )
+// }
+
+
+// export default SearchBar;
+
 import React from 'react';
-import SearchBarInput from './SearchBarInput';
+import iglogo from '../../images/iglogo.png';
 import './SearchBar.css';
 
-const SearchBar = () => {
-    return (
-        <div className="searchBarContainer">
-        <span className="searchBarHeader">
-        <span className="searchBarLogo">
-            <i className="fab fa-instagram" /><span>|</span><h2>Instagram</h2>
-            </span>
-            <div className="searchBarInput">
-            <SearchBarInput/>
-            </div>
-        </span>
+const SearchBar = props => {
+  return (
+    <div className="search-bar-wrapper">
+      <div className="image-wrapper">
+        <img alt="instagram logo" src={iglogo} className="logo-image" />
+      </div>
+      <div>
+        <input type="text" placeholder="Search" onKeyDown={props.searchPosts} />
+      </div>
+      <div className="social-wrapper">
+        <div className="social">
+          <i className="far fa-compass" />
         </div>
-    )
-}
-
+        <div className="social">
+          <i className="far fa-heart" />
+        </div>
+        <div className="social">
+          <i className="far fa-user-circle" />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default SearchBar;
