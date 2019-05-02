@@ -11,28 +11,34 @@ class Post extends React.Component {
       likes: props.post.likes
     };
   }
+
+
   incrementLike = () => {
     let likes = this.state.likes + 1;
     this.setState({ likes });
   };
+
+
   render() {
     return (
-      <div className="post-border">
+      <div className="postBorder">
+      
         <PostTop
           username={this.props.post.username}
-          thumbnailUrl={this.props.post.thumbnailUrl}
-        />
-        <div className="post-image-wrapper">
+          thumbnailUrl={this.props.post.thumbnailUrl} />
+        <div>
           <img
-            alt="post thumbnail"
-            className="post-image"
             src={this.props.post.imageUrl}
-          />
+            alt="posts"
+            className="postPic"
+             />
         </div>
+
         <LikeSection
           incrementLike={this.incrementLike}
           likes={this.state.likes}
-        />
+          newComment={this.state.comments} />
+
         <CommentSection
           postId={this.props.post.imageUrl}
           comments={this.props.post.comments}

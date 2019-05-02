@@ -1,31 +1,15 @@
-/* .comments {
-    padding: 0px 5px;
-}
 
-.commentLines {
-    margin-left: 1rem;
-}
-
-.commentUser {
-    font-weight: bold;
-    font-size: .9rem;
-}
-
-.commentText {
-    font-size: .75rem;
-} */
 .comment-text {
     text-align: left;
-    padding: 2px;
-    margin-left: 4px;
+    padding: 1px;
+    margin-left: 6px;
   }
   
   .comment {
-    font-weight: 300;
-    font-size: 14px;
+    font-size: .7rem;
   }
   
   .user {
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: bold;
+    font-size: .7rem;
   }

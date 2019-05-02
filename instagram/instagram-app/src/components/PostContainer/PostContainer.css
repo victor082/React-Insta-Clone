@@ -1,5 +1,5 @@
 .postContainer {
-  width: 1000px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -8,17 +8,12 @@
     width: 30%;
     margin: 5px auto;
   }
-  .post-border {
-    border: 1px solid #d3d3d3;
+  .postBorder {
+    border: 1px solid #8f8f8f;
     margin: 15px 0;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-  .post-image-wrapper {
-    height: 100%;
-    width: 100%;
   }
   
-  .post-image {
+  .postPic {
     width: 100%;
   }
   
@@ -26,19 +21,21 @@
     display: flex;
   }
   
-  .post-thumb-wrapper {
-    height: 50px;
-    width: 50px;
+  .thumbNailPost {
+    height: 40px;
+    width: 40px;
   }
-  .post-thumb {
+  .thumbnail {
     height: 100%;
     border-radius: 50%;
   }
   .like-section {
     display: flex;
   }
+
+
   
-  .like-section-wrapper {
+  .like-section {
     height: 10px;
     width: 10px;
     margin: 10px;

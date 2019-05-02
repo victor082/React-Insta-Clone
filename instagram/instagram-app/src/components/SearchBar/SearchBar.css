@@ -1,70 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script');
 
-/* .searchBarContainer {
-    width: 100%;
-    margin: 0 auto;
+.searchBarMain {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.searchBarHeader {
-    width: 1000px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid gray;
-}
-
-.searchBarLogo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.searchBarLogo .fab {
-    font-size: 2rem;
-}
-
-.searchBarLogo span {
-    padding: 0 10px;
-}
-
-.searchBarLogo h2 {
-    font-family: 'Oleo Script', cursive;
-    color: rgb(65, 65, 65);
-    font-size: 2rem;
-}
-
-.searchBarInput {
-    display: flex;
-    justify-content: center;
-}
-
-form > input::placeholder {
-    text-align: center;
-} */
-
-.search-bar-wrapper {
-    border-bottom: 1px solid #3333;
-    height: 80px;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.2);
+    height: 100px;
     line-height: 70px;
-    display: flex;
     justify-content: space-between;
     background: #ffffff;
   }
   
-  .image-wrapper {
+  .imageLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
   }
   
-  .logo-image {
-    height: 100%;
-  }
-  
-  .social-wrapper {
+  .social {
     display: flex;
   }
   
-  .social {
+  .cornerButton {
     width: 50px;
+  }
+
+  .logo-image {
+    height: 100%;
   }

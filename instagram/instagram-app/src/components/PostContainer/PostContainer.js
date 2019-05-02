@@ -1,6 +1,5 @@
 import React from 'react';
 import './PostContainer.css';
-import PostsPage from './PostsPage';
 import Post from './Post';
 
 function PostContainer(props) {
