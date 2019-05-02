@@ -1,32 +1,3 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
-// import './Comment.css';
-// import Comment from './Comment';
-// import CommentSect from './CommentSect';
-
-// class CommentContainer extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       comments: props.comments,
-//       comment: ''
-//     }
-//   }
-  
-//   render() {
-//   return (
-//     <div  className="comments">
-//     <div>
-//        {this.state.comments.map(comment => 
-//             <Comment key={comment.username} comment={comment} />)}
-//             <CommentSect />
-//     </div>
-//     </div>
-//   )
-//        }
-// }
-
-// export default CommentContainer;
 import React from 'react';
 import PropTypes from 'prop-types';
 import Comment from './Comment';

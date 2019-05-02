@@ -1,30 +1,15 @@
-// import React from 'react';
-// import './PostContainer.css';
-// import Post from './Post';
-
-
-// function PostContainer(props) {
-//     return (
-//         <div className="postContainer">
-//             {props.posts.map(post => 
-//             <Post key={post.timestamp} post={post} />)}
-//         </div>
-//     )
-// }
-
-
-// export default PostContainer;
-    
 import React from 'react';
-import Post from './Post';
 import './PostContainer.css';
+import PostsPage from './PostsPage';
+import Post from './Post';
 
-const PostsContainer = props => {
-  return (
-    <div className="posts-container-wrapper">
-      {props.posts.map(p => <Post key={p.imageUrl} post={p} />)}
-    </div>
-  );
-};
+function PostContainer(props) {
+    return (
+        <div className="postContainer">
+            {props.posts.map(post => 
+            <Post key={post.timestamp} post={post} />)}
+        </div>
+    )
+}
 
-export default PostsContainer;
+export default PostContainer;

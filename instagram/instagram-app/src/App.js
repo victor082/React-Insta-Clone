@@ -1,45 +1,10 @@
-// import React from 'react';
-// import SearchBar from './components/SearchBar/SearchBar';
-// // import logo from './logo.svg';
-// import dummyData from './dummy-data';
-// import PostContainer from './components/PostContainer/PostContainer';
-// import './App.css';
-
-// class App extends React.Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       posts: []
-//     }
-//   }
-
-//   componentDidMount() {
-//     this.setState({
-//       posts: dummyData
-//     })
-//   }
-
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <SearchBar />
-//         </header>
-//         <PostContainer posts={this.state.posts} />
-//       </div>
-//     );
-//   }
-// }
-
-// export default App;
-
-import React, { Component } from 'react';
-import './App.css';
-import dummyData from './dummy-data';
-import PostsContainer from './components/PostContainer/PostContainer';
+import React from 'react';
 import SearchBar from './components/SearchBar/SearchBar';
+import dummyData from './dummy-data';
+import PostContainer from './components/PostContainer/PostContainer';
+import './App.css';
 
-class App extends Component {
+class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -65,7 +30,7 @@ class App extends Component {
           searchTerm={this.state.searchTerm}
           searchPosts={this.searchPostsHandler}
         />
-        <PostsContainer
+        <PostContainer
           posts={
             this.state.filteredPosts.length > 0
               ? this.state.filteredPosts

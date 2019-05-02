@@ -1,30 +1,8 @@
-// import React from 'react';
-// import PostTop from './PostTop';
-// import CommentContainer from '../CommentSection/CommentContainer';
-// import './PostContainer.css';
-
-// function Post(props) {
-//     return (
-//         <div className="postMain">
-//             <PostTop username={props.post.username} 
-//             thumbnailPic={props.post.thumbnailUrl}/>
-//             <div> <img src={props.post.imageUrl} />
-//             </div>
-//             <p className="Likes">{props.post.likes} Likes</p>
-//             <CommentContainer comments={props.post.comments}/>
-//         </div>
-//     )
-// }
-
-// export default Post;
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import CommentSection from '../CommentSection/CommentContainer';
 import LikeSection from './LikeSection';
-import PostHeader from './PostTop';
-
-import './PostContainer.css';
+import PostTop from './PostTop';
 
 class Post extends React.Component {
   constructor(props) {
@@ -40,7 +18,7 @@ class Post extends React.Component {
   render() {
     return (
       <div className="post-border">
-        <PostHeader
+        <PostTop
           username={this.props.post.username}
           thumbnailUrl={this.props.post.thumbnailUrl}
         />
