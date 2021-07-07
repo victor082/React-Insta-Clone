@@ -1,0 +1,15 @@
+
+.comment-text {
+    text-align: left;
+    padding: 1px;
+    margin-left: 6px;
+  }
+  
+  .comment {
+    font-size: .7rem;
+  }
+  
+  .user {
+    font-weight: bold;
+    font-size: .7rem;
+  }

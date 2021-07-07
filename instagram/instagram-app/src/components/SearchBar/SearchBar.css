@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
+
+.searchBarMain {
+    display: flex;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.2);
+    height: 100px;
+    line-height: 70px;
+    justify-content: space-between;
+    background: #ffffff;
+  }
+  
+  .imageLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .social {
+    display: flex;
+  }
+  
+  .cornerButton {
+    width: 50px;
+  }
+
+  .logo-image {
+    height: 100%;
+  }
